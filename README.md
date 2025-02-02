@@ -125,6 +125,8 @@ The backend handles communication between the frontend and Notion API.
 File: main.py
 python
 
+#Make sure all the following are downloaded
+
 from flask import Flask, render_template, request, jsonify
 import requests
 from datetime import datetime
@@ -132,7 +134,6 @@ from pytz import timezone
 
 app = Flask(__name__)
 
-# Notion API configuration
 NOTION_TOKEN = "your_notion_integration_token"
 DATABASE_ID = "your_notion_database_id"
 
